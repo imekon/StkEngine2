@@ -24,6 +24,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 MIDIOutput *MIDIOutScript::output = nullptr;
 
+#ifdef DUKTAPE_ENABLE
 duk_ret_t MIDIOutScript::midiOutput(duk_context* context)
 {
 	if (duk_is_constructor_call(context))
@@ -71,4 +72,5 @@ duk_ret_t MIDIOutScript::destroyMidiOut(duk_context* context)
 
 	return 0;
 }
+#endif
 

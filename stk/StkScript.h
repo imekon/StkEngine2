@@ -22,7 +22,9 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 #include <string>
 
+#ifdef DUKTAPE_ENABLE
 #include <duktape.h>
+#endif
 
 class StkScript
 {
@@ -40,7 +42,9 @@ public:
 	std::string getErrorMessage() const { return errorMessage; }
 
 private:
+#ifdef DUKTAPE_ENABLE
 	duk_context *context;
+#endif
 
 	int errorCode;
 	std::string errorMessage;

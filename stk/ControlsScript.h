@@ -20,6 +20,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
+
 #include "duktape.h"
 
 class ControlsScript
@@ -32,6 +34,8 @@ public:
 	static duk_ret_t getValue(duk_context *context);
 	static duk_ret_t setValue(duk_context *context);
 };
+
+#endif
 
 #endif // _CONTROLSSCRIPT_H
 

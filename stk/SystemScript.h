@@ -25,7 +25,9 @@ Note this only applies to STKEngine2 and not the STK software itself.
 #include <vector>
 #include <string>
 
+#ifdef DUKTAPE_ENABLE
 #include <duktape.h>
+#endif
 
 #define MESSAGE_SIZE 4096
 
@@ -35,6 +37,7 @@ public:
 	static void initialise();
 	static void shutdown();
 
+#ifdef DUKTAPE_ENABLE
 	static void loadLibrary(duk_context *context);
 
 	static duk_ret_t getGlobal(duk_context *context);
@@ -43,6 +46,7 @@ public:
 	static duk_ret_t log(duk_context *context);
 	static duk_ret_t status(duk_context *context);
 	static duk_ret_t waitTick(duk_context *context);
+#endif
 
 	static int getMessageCount();
 	static const char *getMessage();

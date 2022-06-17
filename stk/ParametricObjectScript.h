@@ -20,6 +20,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
 #include <duktape.h>
 
 class ParametricObjectScript
@@ -125,5 +126,6 @@ public:
 	static void genericOscParams(duk_context* context);
 	static void genericEffectParams(duk_context* context);
 };
+#endif
 
 #endif // _STKSCRIPTOBJECT_H

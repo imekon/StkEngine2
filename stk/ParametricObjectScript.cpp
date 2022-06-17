@@ -24,6 +24,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
 static const duk_function_list_entry parametricObjectLibrary[] =
 {
 	"Initialise",	ParametricObjectScript::initialise,		0,
@@ -1238,4 +1239,4 @@ duk_ret_t ParametricObjectScript::removeEffect(duk_context* context)
 
 	return 0;
 }
-
+#endif

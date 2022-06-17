@@ -20,18 +20,22 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
 #include <duktape.h>
+#endif
 
 #include "MIDIOutput.h"
 
 class MIDIOutScript
 {
 public:
+#ifdef DUKTAPE_ENABLE
 	static void loadLibrary(duk_context *context);
 
 	static duk_ret_t midiOutput(duk_context *context);
 	static duk_ret_t destroyMidiOut(duk_context *context);
 	static duk_ret_t send(duk_context *context);
+#endif
 
 private:
 	static MIDIOutput *output;

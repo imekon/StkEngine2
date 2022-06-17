@@ -21,6 +21,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
 static const duk_function_list_entry controlsScriptLibrary[] =
 {
 	"GetFlag",			ControlsScript::getFlag,		1,
@@ -29,7 +30,6 @@ static const duk_function_list_entry controlsScriptLibrary[] =
 	"SetValue",			ControlsScript::setValue,		2,
 	nullptr,			nullptr,						0
 };
-
 
 void ControlsScript::loadLibrary(duk_context* context)
 {
@@ -67,3 +67,4 @@ duk_ret_t ControlsScript::setValue(duk_context* context)
 	SetControlValue(index, value);
 	return 0;
 }
+#endif

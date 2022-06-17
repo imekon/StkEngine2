@@ -28,9 +28,11 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 using namespace std;
 
-char SystemScript::message[4096];
 CRITICAL_SECTION SystemScript::lock;
 HANDLE SystemScript::textEvent;
+
+#ifdef DUKTAPE_ENABLE
+char SystemScript::message[4096];
 vector<string> SystemScript::messages;
 
 static const duk_function_list_entry scriptSystemLibrary[] =
@@ -44,6 +46,7 @@ static const duk_function_list_entry scriptSystemLibrary[] =
 
 	nullptr,			nullptr,						0
 };
+#endif
 
 void SystemScript::initialise()
 {
@@ -57,6 +60,7 @@ void SystemScript::shutdown()
 	CloseHandle(textEvent);
 }
 
+#ifdef DUKTAPE_ENABLE
 void SystemScript::loadLibrary(duk_context* context)
 {
 	ScriptUtilities::loadLibrary(context, "System", scriptSystemLibrary);
@@ -159,4 +163,4 @@ bool SystemScript::waitText()
 
 	return false;
 }
-
+#endif

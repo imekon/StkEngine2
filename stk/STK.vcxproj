@@ -175,8 +175,6 @@
     <ClInclude Include="MIDIInScript.h" />
     <ClInclude Include="MIDIOutput.h" />
     <ClInclude Include="SimpleSampler.h" />
-    <ClInclude Include="duktape\duktape.h" />
-    <ClInclude Include="duktape\duk_config.h" />
     <ClInclude Include="FX.h" />
     <ClInclude Include="include\ADSR.h" />
     <ClInclude Include="include\Asymp.h" />
@@ -311,7 +309,6 @@
     <ClCompile Include="MIDIInScript.cpp" />
     <ClCompile Include="MIDIOutput.cpp" />
     <ClCompile Include="SimpleSampler.cpp" />
-    <ClCompile Include="duktape\duktape.c" />
     <ClCompile Include="FX.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MIDIOutScript.cpp" />

@@ -19,9 +19,6 @@
     <Filter Include="Header Files\include">
       <UniqueIdentifier>{8f9ee112-5feb-4e9c-b9ee-794f320bad7c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="duktape">
-      <UniqueIdentifier>{0c507679-0465-4394-9e0d-354ecb1fb272}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ADSR.h">
@@ -350,12 +347,6 @@
     </ClInclude>
     <ClInclude Include="Synth.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="duktape\duk_config.h">
-      <Filter>duktape</Filter>
-    </ClInclude>
-    <ClInclude Include="duktape\duktape.h">
-      <Filter>duktape</Filter>
     </ClInclude>
     <ClInclude Include="ScriptUtilities.h">
       <Filter>Header Files</Filter>
@@ -712,9 +703,6 @@
     </ClCompile>
     <ClCompile Include="Synth.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="duktape\duktape.c">
-      <Filter>duktape</Filter>
     </ClCompile>
     <ClCompile Include="ScriptUtilities.cpp">
       <Filter>Source Files</Filter>

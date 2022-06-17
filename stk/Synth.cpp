@@ -117,13 +117,15 @@ extern "C"
 		switch(version)
 		{
 		case STK_VERSION_DUKTAPE:
+#ifdef DUKTAPE_ENABLE
 			return DUK_GIT_DESCRIBE;
+#endif
 
 		case STK_VERSION_SYNTHESIS:
-			return "4.6.1";
+			return "4.6.2";
 
 		case STK_VERSION_ENGINE:
-			return "1.0.1 (29/08/2021)";
+			return "2.0.0 (17/06/2022)";
 
 		default:
 			return "";

@@ -24,31 +24,43 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
-StkScript::StkScript(): context(nullptr), errorCode(0)
+StkScript::StkScript(): 
+#ifdef DUKTAPE_ENABLE
+	context(nullptr),
+#endif
+	errorCode(0)
 {
 
 }
 
 void StkScript::initialise()
 {
+#ifdef DUKTAPE_ENABLE
 	context = duk_create_heap_default();
+#endif
 
 	SystemScript::initialise();
 
+#ifdef DUKTAPE_ENABLE
 	SystemScript::loadLibrary(context);
 	ParametricObjectScript::loadLibrary(context);
 	MIDIConfigScript::loadLibrary(context);
 	ControlsScript::loadLibrary(context);
+#endif
 }
 
 void StkScript::shutdown()
 {
+#ifdef DUKTAPE_ENABLE
 	duk_destroy_heap(context);
+
 	context = nullptr;
+#endif
 
 	SystemScript::shutdown();
 }
 
+#ifdef DUKTAPE_ENABLE
 void StkScript::push_file_as_string(const char *filename)
 {
 	FILE *f;
@@ -108,4 +120,4 @@ std::string StkScript::evaluate(const char* text) const
 
 	return result;
 }
-
+#endif

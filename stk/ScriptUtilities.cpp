@@ -19,6 +19,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
+#ifdef DUKTAPE_ENABLE
 void ScriptUtilities::readArray(duk_context *context, std::function<bool(const char *)> callback)
 {
 	if (duk_is_array(context, -1))
@@ -137,3 +138,4 @@ void ScriptUtilities::pushTwoKeys(duk_context *context, int x, int y)
 	duk_push_int(context, y);
 	duk_put_prop_string(context, arrayIndex, "y");
 }
+#endif

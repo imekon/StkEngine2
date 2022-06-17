@@ -24,6 +24,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 MIDIInput *MIDIInScript::input = nullptr;
 
+#ifdef DUKTAPE_ENABLE
 duk_ret_t MIDIInScript::midiInput(duk_context * context)
 {
 	if (duk_is_constructor_call(context))
@@ -73,4 +74,4 @@ duk_ret_t MIDIInScript::getInput(duk_context * context)
 
 	return 0;
 }
-
+#endif
