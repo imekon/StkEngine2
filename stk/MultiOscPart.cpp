@@ -1,4 +1,4 @@
-﻿#include "MultiOscVoice.h"
+﻿#include "MultiOscPart.h"
 
 /*
 
@@ -19,16 +19,16 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 Note this only applies to STKEngine2 and not the STK software itself.
 */
 
-MultiOscVoice::MultiOscVoice(): type(STK_OSC_TYPE_SAW)
+MultiOscPart::MultiOscPart(): type(STK_OSC_TYPE_SAW)
 {
 }
 
-void MultiOscVoice::setType(STK_OSC_TYPE type)
+void MultiOscPart::setType(STK_OSC_TYPE type)
 {
 	this->type = type;
 }
 
-void MultiOscVoice::setFrequency(stk::StkFloat frequency)
+void MultiOscPart::setFrequency(stk::StkFloat frequency)
 {
 	switch(type)
 	{
@@ -50,7 +50,7 @@ void MultiOscVoice::setFrequency(stk::StkFloat frequency)
 	}	
 }
 
-stk::StkFloat MultiOscVoice::tick(unsigned channel)
+stk::StkFloat MultiOscPart::tick(unsigned channel)
 {
 	switch(type)
 	{

@@ -25,7 +25,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 #include "STKParameters.h"
 #include "MultiFilter.h"
-#include "MultiOscVoice.h"
+#include "MultiOscPart.h"
 #include "ParametricOsc.h"
 
 class MultiOsc : public ParametricOsc
@@ -45,9 +45,10 @@ private:
 	stk::StkFloat left;
 	stk::StkFloat right;
 	stk::StkFloat amplitude;
-	MultiOscVoice osc1;
-	MultiOscVoice osc2;
-	MultiOscVoice osc3;
+	// Rename voice to part and merge into one for Voicer
+	MultiOscPart osc1;
+	MultiOscPart osc2;
+	MultiOscPart osc3;
 	stk::ADSR envelope;
 	MultiFilter filter;
 	stk::ADSR filterEnvelope;

@@ -27,10 +27,10 @@ Note this only applies to STKEngine2 and not the STK software itself.
 #include "Noise.h"
 #include "Instrmnt.h"
 
-class MultiOscVoice : public stk::Instrmnt
+class MultiOscPart : public stk::Instrmnt
 {
 public:
-	MultiOscVoice();
+	MultiOscPart();
 
 	STK_OSC_TYPE getType() const { return type; }
 	void setType(STK_OSC_TYPE type);

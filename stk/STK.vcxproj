@@ -283,7 +283,7 @@
     <ClInclude Include="MultiFilter.h" />
     <ClInclude Include="MultiOsc.h" />
     <ClInclude Include="OscillatorManager.h" />
-    <ClInclude Include="MultiOscVoice.h" />
+    <ClInclude Include="MultiOscPart.h" />
     <ClInclude Include="ParametricOsc.h" />
     <ClInclude Include="ScriptUtilities.h" />
     <ClInclude Include="StkEngine.h" />
@@ -315,7 +315,7 @@
     <ClCompile Include="MultiFilter.cpp" />
     <ClCompile Include="MultiOsc.cpp" />
     <ClCompile Include="OscillatorManager.cpp" />
-    <ClCompile Include="MultiOscVoice.cpp" />
+    <ClCompile Include="MultiOscPart.cpp" />
     <ClCompile Include="ParametricOsc.cpp" />
     <ClCompile Include="ScriptUtilities.cpp" />
     <ClCompile Include="src\ADSR.cpp" />

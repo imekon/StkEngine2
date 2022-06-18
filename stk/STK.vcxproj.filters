@@ -375,7 +375,7 @@
     <ClInclude Include="MultiOsc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MultiOscVoice.h">
+    <ClInclude Include="MultiOscPart.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FX.h">
@@ -728,7 +728,7 @@
     <ClCompile Include="MultiOsc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MultiOscVoice.cpp">
+    <ClCompile Include="MultiOscPart.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FX.cpp">
