@@ -1,5 +1,4 @@
-﻿#ifndef _MULTIOSC_H
-#define _MULTIOSC_H
+#pragma once
 
 /*
 
@@ -23,25 +22,20 @@ Note this only applies to STKEngine2 and not the STK software itself.
 #include "Stk.h"
 #include "ADSR.h"
 
-#include "STKParameters.h"
 #include "MultiFilter.h"
 #include "MultiOscPart.h"
 #include "ParametricOsc.h"
 
-// TODO: this needs to be the voicer
-// filter and FX need to be here
-class MultiOsc : public ParametricOsc
+class MultiOscVoice : public stk::Instrmnt
 {
 public:
-	explicit MultiOsc();
+	explicit MultiOscVoice(ParametricOsc *parametricOsc);
 
 	void setFrequency(stk::StkFloat frequency) override;
 	void noteOn(stk::StkFloat frequency, stk::StkFloat amplitude) override;
 	void noteOff(stk::StkFloat amplitude) override;
 	stk::StkFloat tick(unsigned int channel = 0) override;
 	stk::StkFrames& tick(stk::StkFrames& frames, unsigned int channel = 0) override;
-
-	void setParameter(STK_PARAMETERS parameter, stk::StkFloat value) override;
 
 private:
 	stk::StkFloat left;
@@ -52,9 +46,6 @@ private:
 	MultiOscPart osc2;
 	MultiOscPart osc3;
 	stk::ADSR envelope;
-	MultiFilter filter;
-	stk::ADSR filterEnvelope;
-
+	ParametricOsc* parametricOsc;
 };
 
-#endif // _MULTIOSC_H

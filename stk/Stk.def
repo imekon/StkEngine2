@@ -14,7 +14,7 @@
 
 ; Note this only applies to STKEngine2 and not the STK software itself.
 
-LIBRARY STK
+LIBRARY STKENGINE2
 EXPORTS
 	StkScriptInitialise
 	StkScriptShutdown

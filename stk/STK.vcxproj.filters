@@ -417,6 +417,9 @@
     <ClInclude Include="MIDIConfigScript.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MultiOscVoice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ADSR.cpp">
@@ -765,6 +768,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MIDIConfigScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiOscVoice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
