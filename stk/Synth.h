@@ -28,7 +28,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 #include "FX.h"
 
-#define NATIVE_POINTER "\xff\xffpointer"
+//#define NATIVE_POINTER "\xff\xffpointer"
 
 class ParametricOsc;
 class MIDIInput;
