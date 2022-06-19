@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, main, StkEngine2
+  Forms, main, StkEngine2, mode, modes
   { you can add units after this };
 
 {$R *.res}

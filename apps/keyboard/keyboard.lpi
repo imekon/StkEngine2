@@ -38,12 +38,21 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="..\engine\stkengine2.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="StkEngine2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mode.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="modes.pas"/>
+        <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
   </ProjectOptions>

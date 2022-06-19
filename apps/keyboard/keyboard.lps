@@ -18,9 +18,11 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="23" Y="43"/>
+        <TopLine Value="32"/>
+        <CursorPos X="31" Y="75"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -29,42 +31,30 @@
         <Filename Value="..\engine\stkengine2.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="StkEngine2"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="106"/>
         <CursorPos X="22" Y="124"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="mode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="54" Y="24"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="modes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="21" Y="122"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="21">
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="214" Column="44" TopLine="169"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="9" Column="24"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="5" Column="10"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="7"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="6" Column="11"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="10"/>
-      </Position>
-      <Position>
-        <Filename Value="..\engine\stkengine2.pas"/>
-        <Caret Line="74" Column="45" TopLine="73"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="..\engine\stkengine2.pas"/>
         <Caret Line="160" Column="49" TopLine="137"/>
@@ -123,6 +113,65 @@
       <Position>
         <Filename Value="main.pas"/>
         <Caret Line="37" Column="5" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="modes.pas"/>
+        <Caret Line="185" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="modes.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="mode.pas"/>
+        <Caret Line="24" Column="54"/>
+      </Position>
+      <Position>
+        <Filename Value="modes.pas"/>
+        <Caret Line="10"/>
+      </Position>
+      <Position>
+        <Filename Value="modes.pas"/>
+        <Caret Line="150"/>
+      </Position>
+      <Position>
+        <Filename Value="modes.pas"/>
+        <Caret Line="8" Column="12"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="26" Column="16" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="27" Column="16" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="28" Column="16" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="29" Column="16" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="55" Column="32" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="46" Column="37" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="55" Column="17" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="58" Column="7" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="60" Column="7" TopLine="27"/>
       </Position>
     </JumpHistory>
     <RunParams>
