@@ -290,7 +290,7 @@
     <ClInclude Include="include\WvOut.h" />
     <ClInclude Include="MIDIOutScript.h" />
     <ClInclude Include="MultiFilter.h" />
-    <ClInclude Include="MultiOsc.h" />
+    <ClInclude Include="MonoMultiOsc.h" />
     <ClInclude Include="OscillatorManager.h" />
     <ClInclude Include="MultiOscPart.h" />
     <ClInclude Include="ParametricOsc.h" />
@@ -323,7 +323,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MIDIOutScript.cpp" />
     <ClCompile Include="MultiFilter.cpp" />
-    <ClCompile Include="MultiOsc.cpp" />
+    <ClCompile Include="MonoMultiOsc.cpp" />
     <ClCompile Include="OscillatorManager.cpp" />
     <ClCompile Include="MultiOscPart.cpp" />
     <ClCompile Include="ParametricOsc.cpp" />

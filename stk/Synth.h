@@ -66,7 +66,7 @@ extern "C"
 	extern double __stdcall GetGlobalParam(STK_GLOBALS global);
 	extern void __stdcall SetGlobalParam(STK_GLOBALS global, double value);
 
-	extern ParametricOsc * __stdcall CreateSynth();
+	extern ParametricOsc * __stdcall CreateMonoSynth();
 	extern ParametricOsc * __stdcall CreateSamplerSynth();
 	extern void __stdcall DestroySynth(ParametricOsc *osc);
 

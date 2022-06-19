@@ -30,10 +30,10 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 // TODO: this needs to be the voicer
 // filter and FX need to be here
-class MultiOsc : public ParametricOsc
+class MonoMultiOsc : public ParametricOsc
 {
 public:
-	explicit MultiOsc();
+	explicit MonoMultiOsc();
 
 	void setFrequency(stk::StkFloat frequency) override;
 	void noteOn(stk::StkFloat frequency, stk::StkFloat amplitude) override;

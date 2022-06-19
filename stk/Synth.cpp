@@ -6,7 +6,7 @@
 #include "SystemScript.h"
 #include "Controls.h"
 #include "STK_VERSION.h"
-#include "MultiOsc.h"
+#include "MonoMultiOsc.h"
 #include "SimpleSampler.h"
 #include "EchoFX.h"
 #include "ChorusFX.h"
@@ -221,9 +221,9 @@ extern "C"
 		}
 	}
 
-	ParametricOsc * __stdcall CreateSynth()
+	ParametricOsc * __stdcall CreateMonoSynth()
 	{
-		auto osc = new MultiOsc();
+		auto osc = new MonoMultiOsc();
 
 		engine->addOsc(osc);
 

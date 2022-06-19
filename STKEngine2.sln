@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STK", "stk\STK.vcxproj", "{433F8F6A-A4AD-4757-AD02-33280664FB24}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StkEngineConsole", "StkEngineConsole\StkEngineConsole.vcxproj", "{C5EB4562-49AE-491C-A46A-035701C368B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{433F8F6A-A4AD-4757-AD02-33280664FB24} = {433F8F6A-A4AD-4757-AD02-33280664FB24}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

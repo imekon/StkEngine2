@@ -372,7 +372,7 @@
     <ClInclude Include="ControlsScript.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MultiOsc.h">
+    <ClInclude Include="MonoMultiOsc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MultiOscPart.h">
@@ -728,7 +728,7 @@
     <ClCompile Include="ControlsScript.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MultiOsc.cpp">
+    <ClCompile Include="MonoMultiOsc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MultiOscPart.cpp">

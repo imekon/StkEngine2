@@ -1,5 +1,5 @@
 ﻿#include "Utilities.h"
-#include "MultiOsc.h"
+#include "MonoMultiOsc.h"
 
 /*
 
@@ -22,7 +22,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 using namespace stk;
 
-MultiOsc::MultiOsc()
+MonoMultiOsc::MonoMultiOsc()
 {
 	parameters[STK_PARAMETER_OSC1_TYPE] = STK_OSC_TYPE_SAW;
 	parameters[STK_PARAMETER_OSC1_GAIN] = 1.0;
@@ -47,14 +47,14 @@ MultiOsc::MultiOsc()
 	amplitude = 0.7;
 }
 
-void MultiOsc::setFrequency(StkFloat frequency)
+void MonoMultiOsc::setFrequency(StkFloat frequency)
 {
 	osc1.setFrequency(Utilities::noteRatio(parameters[STK_PARAMETER_OSC1_COARSE] + parameters[STK_PARAMETER_OSC1_FINE] / 100.0, frequency));
 	osc2.setFrequency(Utilities::noteRatio(parameters[STK_PARAMETER_OSC2_COARSE] + parameters[STK_PARAMETER_OSC2_FINE] / 100.0, frequency));
 	osc3.setFrequency(Utilities::noteRatio(parameters[STK_PARAMETER_OSC3_COARSE] + parameters[STK_PARAMETER_OSC3_FINE] / 100.0, frequency));
 }
 
-void MultiOsc::noteOn(StkFloat frequency, StkFloat amplitude)
+void MonoMultiOsc::noteOn(StkFloat frequency, StkFloat amplitude)
 {
 	this->amplitude = amplitude;
 	envelope.keyOn();
@@ -62,13 +62,13 @@ void MultiOsc::noteOn(StkFloat frequency, StkFloat amplitude)
 	setFrequency(frequency);
 }
 
-void MultiOsc::noteOff(StkFloat amplitude)
+void MonoMultiOsc::noteOff(StkFloat amplitude)
 {
 	envelope.keyOff();
 	filterEnvelope.keyOff();
 }
 
-StkFloat MultiOsc::tick(unsigned int channel)
+StkFloat MonoMultiOsc::tick(unsigned int channel)
 {
 	if (channel == 0)
 	{
@@ -107,12 +107,12 @@ StkFloat MultiOsc::tick(unsigned int channel)
 	return right;
 }
 
-StkFrames& MultiOsc::tick(StkFrames& frames, unsigned int channel)
+StkFrames& MonoMultiOsc::tick(StkFrames& frames, unsigned int channel)
 {
 	return frames;
 }
 
-void MultiOsc::setParameter(STK_PARAMETERS parameter, StkFloat value)
+void MonoMultiOsc::setParameter(STK_PARAMETERS parameter, StkFloat value)
 {
 	parameters[parameter] = value;
 

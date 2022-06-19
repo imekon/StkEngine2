@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 	Initialise();
 	Start();
 
-	auto osc = CreateSynth();
+	auto osc = CreateMonoSynth();
 	auto echo = CreateEchoEffect();
 	OscAddEffect(osc, echo);
 
