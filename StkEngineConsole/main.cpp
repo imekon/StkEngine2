@@ -30,23 +30,37 @@ int main(int argc, char* argv[])
 	Initialise();
 	Start();
 
-	auto osc = CreateMonoSynth();
+	std::cout << "Mono synth" << std::endl;
+
+	auto mono = CreateMonoSynth();
 	auto echo = CreateEchoEffect();
-	OscAddEffect(osc, echo);
+	OscAddEffect(mono, echo);
 
-	SetOscParam(osc, STK_FILTER_CUTOFF, 0.7f);
+	SetOscParam(mono, STK_FILTER_CUTOFF, 0.7);
 
-	NoteOn(osc, 60, 0.7f);
+	NoteOn(mono, 60, 0.7);
 	Sleep(500);
-	NoteOff(osc, 60, 0.3f);
+	NoteOff(mono, 60, 0.3);
+
+	Sleep(5000);
+
+	std::cout << "Poly synth" << std::endl;
+
+	auto poly = CreatePolySynth(4);
+	SetOscParam(poly, STK_FILTER_CUTOFF, 0.7);
+
+	NoteOn(poly, 60, 0.7);
+	Sleep(500);
+	NoteOff(poly, 60, 0.3);
 
 	Sleep(5000);
 
 	Stop();
 
-	OscRemoveEffect(osc, echo);
+	OscRemoveEffect(mono, echo);
 	DestroyEffect(echo);
-	DestroySynth(osc);
+	DestroySynth(mono);
+	DestroySynth(poly);
 	Shutdown();
 
 	return 0;
