@@ -1,5 +1,5 @@
-﻿#ifndef _MULTIOSC_H
-#define _MULTIOSC_H
+﻿#ifndef _MONOMULTIOSC_H
+#define _MONOMULTIOSC_H
 
 /*
 
@@ -57,4 +57,4 @@ private:
 
 };
 
-#endif // _MULTIOSC_H
+#endif // _MONOMULTIOSC_H
