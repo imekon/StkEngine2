@@ -1,0 +1,11 @@
+object MainForm: TMainForm
+  Left = 259
+  Height = 157
+  Top = 131
+  Width = 752
+  Caption = 'Keyboard'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poDefaultPosOnly
+  LCLVersion = '2.2.2.0'
+end
