@@ -43,9 +43,9 @@ var
 
 begin
   Initialise;
-  Start;
+  //Start;
 
-  m_osc := CreateMonoSynth;
+  //m_osc := CreateMonoSynth;
   m_modes := TModes.Create;
 
   ScaleList.ItemIndex := 0;
@@ -62,9 +62,9 @@ end;
 
 procedure TMainForm.FormDestroy(Sender: TObject);
 begin
-  Stop;
-  DestroySynth(m_osc);
-  Shutdown;
+  //Stop;
+  //DestroySynth(m_osc);
+  //Shutdown;
   FreeAndNil(m_modes);
 end;
 
