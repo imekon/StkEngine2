@@ -38,6 +38,7 @@ EXPORTS
 	GetGlobalParam
 	SetGlobalParam
 	CreateMonoSynth
+	CreatePolySynth
 	CreateSamplerSynth
 	DestroySynth
 	CreateEchoEffect

@@ -22,11 +22,8 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 using namespace stk;
 
-MultiOscVoice::MultiOscVoice(ParametricOsc *parametricOsc) : parametricOsc(parametricOsc)
+MultiOscVoice::MultiOscVoice(ParametricOsc *parametricOsc) : parametricOsc(parametricOsc), left(0.0), right(0.0), amplitude(0.7)
 {
-	left = 0.0;
-	right = 0.0;
-	amplitude = 0.7;
 }
 
 void MultiOscVoice::setFrequency(StkFloat frequency)

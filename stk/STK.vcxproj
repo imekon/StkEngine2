@@ -183,6 +183,7 @@
     <ClInclude Include="MIDIInScript.h" />
     <ClInclude Include="MIDIOutput.h" />
     <ClInclude Include="MultiOscVoice.h" />
+    <ClInclude Include="PolyMultiOsc.h" />
     <ClInclude Include="SimpleSampler.h" />
     <ClInclude Include="FX.h" />
     <ClInclude Include="include\ADSR.h" />
@@ -318,6 +319,7 @@
     <ClCompile Include="MIDIInScript.cpp" />
     <ClCompile Include="MIDIOutput.cpp" />
     <ClCompile Include="MultiOscVoice.cpp" />
+    <ClCompile Include="PolyMultiOsc.cpp" />
     <ClCompile Include="SimpleSampler.cpp" />
     <ClCompile Include="FX.cpp" />
     <ClCompile Include="main.cpp" />

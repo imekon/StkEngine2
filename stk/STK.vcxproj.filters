@@ -420,6 +420,9 @@
     <ClInclude Include="MultiOscVoice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PolyMultiOsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ADSR.cpp">
@@ -771,6 +774,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MultiOscVoice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PolyMultiOsc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -22,7 +22,7 @@ Note this only applies to STKEngine2 and not the STK software itself.
 
 using namespace stk;
 
-MonoMultiOsc::MonoMultiOsc()
+MonoMultiOsc::MonoMultiOsc() : left(0.0), right(0.0), amplitude(0.7)
 {
 	parameters[STK_PARAMETER_OSC1_TYPE] = STK_OSC_TYPE_SAW;
 	parameters[STK_PARAMETER_OSC1_GAIN] = 1.0;
@@ -41,10 +41,6 @@ MonoMultiOsc::MonoMultiOsc()
 
 	initialiseFilter(filter, filterEnvelope);
 	initialiseEnvelope(envelope);
-
-	left = 0.0;
-	right = 0.0;
-	amplitude = 0.7;
 }
 
 void MonoMultiOsc::setFrequency(StkFloat frequency)

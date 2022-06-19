@@ -20,16 +20,21 @@ Note this only applies to STKEngine2 and not the STK software itself.
 */
 
 #include "Stk.h"
-#include "ADSR.h"
+#include "Voicer.h"
 
+#include "STKParameters.h"
 #include "MultiFilter.h"
-#include "MultiOscPart.h"
+#include "MultiOscVoice.h"
 #include "ParametricOsc.h"
 
-class MultiOscVoice : public stk::Instrmnt
+// TODO: this needs to be the voicer
+// filter and FX need to be here
+
+
+class PolyMultiOsc : public ParametricOsc
 {
 public:
-	explicit MultiOscVoice(ParametricOsc *parametricOsc);
+	explicit PolyMultiOsc(int voiceCount);
 
 	void setFrequency(stk::StkFloat frequency) override;
 	void noteOn(stk::StkFloat frequency, stk::StkFloat amplitude) override;
@@ -37,16 +42,15 @@ public:
 	stk::StkFloat tick(unsigned int channel = 0) override;
 	stk::StkFrames& tick(stk::StkFrames& frames, unsigned int channel = 0) override;
 
-private:
-	friend class PolyMultiOsc;
+	void setParameter(STK_PARAMETERS parameter, stk::StkFloat value) override;
 
+private:
 	stk::StkFloat left;
 	stk::StkFloat right;
 	stk::StkFloat amplitude;
-	MultiOscPart osc1;
-	MultiOscPart osc2;
-	MultiOscPart osc3;
-	stk::ADSR envelope;
-	ParametricOsc* parametricOsc;
-};
+	stk::Voicer voicer;
+	MultiFilter filter;
+	stk::ADSR filterEnvelope;
 
+	std::vector<MultiOscVoice*> voices;
+};

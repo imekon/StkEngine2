@@ -7,6 +7,7 @@
 #include "Controls.h"
 #include "STK_VERSION.h"
 #include "MonoMultiOsc.h"
+#include "PolyMultiOsc.h"
 #include "SimpleSampler.h"
 #include "EchoFX.h"
 #include "ChorusFX.h"
@@ -224,6 +225,15 @@ extern "C"
 	ParametricOsc * __stdcall CreateMonoSynth()
 	{
 		auto osc = new MonoMultiOsc();
+
+		engine->addOsc(osc);
+
+		return osc;
+	}
+
+	ParametricOsc* __stdcall CreatePolySynth(int voiceCount)
+	{
+		auto osc = new PolyMultiOsc(voiceCount);
 
 		engine->addOsc(osc);
 

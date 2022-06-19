@@ -67,6 +67,7 @@ extern "C"
 	extern void __stdcall SetGlobalParam(STK_GLOBALS global, double value);
 
 	extern ParametricOsc * __stdcall CreateMonoSynth();
+	extern ParametricOsc* __stdcall CreatePolySynth(int voiceCount);
 	extern ParametricOsc * __stdcall CreateSamplerSynth();
 	extern void __stdcall DestroySynth(ParametricOsc *osc);
 
