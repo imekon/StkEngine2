@@ -64,6 +64,8 @@ object MainForm: TMainForm
     Top = 52
     Width = 721
     Anchors = [akTop, akLeft, akRight, akBottom]
+    OnMouseDown = OnKeyBoxDown
+    OnMouseUp = OnKeyBoxUp
     OnPaint = OnKeyPaint
   end
 end
