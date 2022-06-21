@@ -10,30 +10,54 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StkEngineConsole", "StkEngi
 		{433F8F6A-A4AD-4757-AD02-33280664FB24} = {433F8F6A-A4AD-4757-AD02-33280664FB24}
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keyboard", "apps\keyboard\Keyboard.csproj", "{E51818E4-9ACD-4210-9766-A3AE8A59DB49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|Any CPU.Build.0 = Debug|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|x64.ActiveCfg = Debug|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|x64.Build.0 = Debug|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|x86.ActiveCfg = Debug|Win32
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Debug|x86.Build.0 = Debug|Win32
+		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|Any CPU.ActiveCfg = Release|x64
+		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|Any CPU.Build.0 = Release|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|x64.ActiveCfg = Release|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|x64.Build.0 = Release|x64
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|x86.ActiveCfg = Release|Win32
 		{433F8F6A-A4AD-4757-AD02-33280664FB24}.Release|x86.Build.0 = Release|Win32
+		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|Any CPU.Build.0 = Debug|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|x64.ActiveCfg = Debug|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|x64.Build.0 = Debug|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|x86.ActiveCfg = Debug|Win32
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Debug|x86.Build.0 = Debug|Win32
+		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|Any CPU.ActiveCfg = Release|x64
+		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|Any CPU.Build.0 = Release|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|x64.ActiveCfg = Release|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|x64.Build.0 = Release|x64
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|x86.ActiveCfg = Release|Win32
 		{C5EB4562-49AE-491C-A46A-035701C368B9}.Release|x86.Build.0 = Release|Win32
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|x64.Build.0 = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Debug|x86.Build.0 = Debug|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|x64.ActiveCfg = Release|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|x64.Build.0 = Release|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|x86.ActiveCfg = Release|Any CPU
+		{E51818E4-9ACD-4210-9766-A3AE8A59DB49}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
